@@ -1,11 +1,11 @@
 #include <iostream> //incorpora a tela
 #include <locale.h> //importa a biblioteca de linguagens do c++
-#include <math.h>   //importa a biblioteca de matemÃ¡tica padrÃ£o do c++
+#include <math.h>   //importa a biblioteca de matemática padrão do c++
 #include <conio.h>  //serve para adicionar o input/output ao console.
 #include <stdlib.h> //adiciona o comando de limpar a tela.
 #include <stddef.h> //adiciona o valor NULL que tem o valor nulo. Equivalente a 0.
 
-using namespace std; //omite o namespace std quando vamos digitar uma funÃ§Ã£o dela.
+using namespace std; //omite o namespace std quando vamos digitar uma função dela.
 
 void adicao(){
     system("CLS");
@@ -22,7 +22,7 @@ void adicao(){
     cout << "O resultado da adição é igual a: " << r << endl;
     cout << "Digite 0 para voltar ao menu inicial.\n";
     cout << ">: ";
-    cin >> resp;
+    cin >> resp; //a variável resp serve apenas para que o usuário tecle algum valor para retornar ao menu principal.
     system("CLS");
 }
 void multiplicacao(){
@@ -91,7 +91,7 @@ void raizQuadrada(){
     cout << ">: ";
     cin >> a;
     
-    r = sqrt(a);
+    r = sqrt(a); //esta função calcula a raiz quadrada de um número, que neste caso é <a>
 
     cout << "O resultado da raiz quadrada é igual a: " << r << endl;
     cout << "Digite 0 para voltar ao menu inicial.\n";
@@ -101,7 +101,7 @@ void raizQuadrada(){
 }
 
 void menuOpcao(){
-    int valorEntrada = NULL;
+    int valorEntrada = NULL; //NULL é um valor de inicialização da variável que significa VAZIO. É equivalente ao 0.
     
     while (valorEntrada == NULL){  
         cout << "Escolha a opção desejada: \n";
@@ -135,7 +135,7 @@ void menuOpcao(){
 
             default:
                 cout << "Opção inválida. Tente novamente.";
-                cin;
+                cin; 
                 system("CLS");
                 valorEntrada = NULL;
         }
